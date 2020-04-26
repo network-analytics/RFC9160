@@ -35,7 +35,7 @@
       </address>
     </author>
 
-    <date day="6" month="April" year="2020"/>
+    <date day="26" month="April" year="2020"/>
 
     <abstract>
       <t>This document introduces additional code points in the
@@ -146,25 +146,29 @@
 
       <t><figure>
           <artwork align="center"><![CDATA[
-       ----------------------------------------
-       | Value |  Description     | Reference |
-       |--------------------------------------|
-       | TBD5  | Unknown SID Type |  RFC8402  |       
-       |--------------------------------------|
-       | TBD6  | Prefix-SID       |  RFC8402  |
-       |--------------------------------------|
-       | TBD7  | Node-SID         |  RFC8402  |
-       |--------------------------------------|
-       | TBD8  | Anycast-SID      |  RFC8402  |
-       |--------------------------------------|
-       | TBD9  | Adjacency-SID    |  RFC8402  |
-       |--------------------------------------|
-       | TBD10 | PeerNode-SID     |  RFC8402  |
-       |--------------------------------------|
-       | TBD11 | PeerAdj-SID      |  RFC8402  |
-       |--------------------------------------|
-       | TBD12 | PeerSet-SID      |  RFC8402  |
-       ----------------------------------------
+       -----------------------------------------
+       | Value |  Description      | Reference |
+       |---------------------------------------|
+       | TBD5  | Unknown SID Type  |  RFC8402  |       
+       |---------------------------------------|
+       | TBD6  | Prefix-SID        |  RFC8402  |
+       |---------------------------------------|
+       | TBD7  | Node-SID          |  RFC8402  |
+       |---------------------------------------|
+       | TBD8  | Anycast-SID       |  RFC8402  |
+       |---------------------------------------|
+       | TBD9  | Adjacency-SID     |  RFC8402  |
+       |---------------------------------------|
+       | TBD10 | LAN-Adjacency-SID |  RFC8402  |
+       |---------------------------------------|
+       | TBD11 | PeerNode-SID      |  RFC8402  |
+       |---------------------------------------|
+       | TBD12 | PeerAdj-SID       |  RFC8402  |
+       |---------------------------------------|
+       | TBD13 | PeerSet-SID       |  RFC8402  |
+       |---------------------------------------|
+       | TBD14 | Binding-SID       |  RFC8402  |
+       -----------------------------------------
 
  Figure 3: New "IPFIX Information Element #TBD4" SubRegistry ]]></artwork>
         </figure></t>
