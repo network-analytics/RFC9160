@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd">
+<?rfc toc="yes"?>
+<?rfc tocompact="yes"?>
+<?rfc tocdepth="1"?>
+<?rfc tocindent="yes"?>
+<?rfc symrefs="yes"?>
+<?rfc sortrefs="yes"?>
+<?rfc comments="yes"?>
+<?rfc inline="yes"?>
+<?rfc compact="yes"?>
+<?rfc subcompact="no"?>
+<rfc category="std" docName="draft-tgraf-ipfix-mpls-sr-label-type-06"
+     ipr="trust200902">
+  <front>
+    <title
+    abbrev="IPFIX MPLS Segment Routing Information">Export&nbsp;of&nbsp;MPLS&nbsp;Segment&nbsp;Routing&nbsp;Label&nbsp;Type&nbsp;Information&nbsp;in
+    IP&nbsp;Flow&nbsp;Information&nbsp;Export&nbsp;(IPFIX)</title>
+
+    <author fullname="Thomas Graf" initials="T. " surname="Graf">
+      <organization>Swisscom</organization>
+
+      <address>
+        <postal>
+          <street>Binzring 17</street>
+
+          <city>Zurich</city>
+
+          <code>8045</code>
+
+          <country>Switzerland</country>
+        </postal>
+
+        <email>thomas.graf@swisscom.com</email>
+      </address>
+    </author>
+
+    <date day="15" month="October" year="2020"/>
+
+    <abstract>
+      <t>This document introduces additional code points in the
+      mplsTopLabelType Information Element for IS-IS, OSPFv2, OSPFv3 and BGP
+      MPLS Segment Routing (SR) extensions to enable Segment Routing label
+      protocol type information in IP Flow Information Export (IPFIX).</t>
+    </abstract>
+  </front>
+
+  <middle>
+    <section title="Introduction">
+      <t>Besides <xref target="RFC8277">BGP-4</xref>, <xref
+      target="RFC5036">LDP</xref> and <xref target="RFC4364">BGP VPN</xref>,
+      four new routing-protocols, <xref target="RFC8665">OSPFv2
+      Extensions</xref>, <xref target="RFC8666">OSPFv3 Extensions</xref>,
+      <xref target="RFC8667">IS-IS Extensions</xref> and <xref
+      target="RFC8669">BGP Prefix-SID</xref> have been added to the list of
+      routing-protocols able to propagate <xref target="RFC8660">Segment
+      Routing labels for the MPLS data plane</xref>.</t>
+
+      <t><xref target="I-D.ali-spring-sr-traffic-accounting">Traffic
+      Accounting in Segment Routing Networks</xref> describes how IPFIX can be
+      leveraged to account traffic to MPLS Segment Routing label dimensions
+      within a Segment Routing domain.</t>
+
+      <t>In the <xref target="RFC7012">Information Model for IP Flow
+      Information Export IPFIX</xref>, the information element
+      mplsTopLabelType(46) describes which MPLS control plane protocol
+      allocated the top-of-stack label in the MPLS label stack. <xref
+      target="RFC7012">RFC 7012 section 7.2</xref> describes the <xref
+      target="IANA-IPFIX-IE46">"IPFIX MPLS label type (Value 46)"
+      sub-registry</xref> where new code points should be added.</t>
+    </section>
+
+    <section title="MPLS Segment Routing Top Label Type">
+      <t>By introducing four new code points to information element
+      mplsTopLabelType(46) for IS-IS, OSPFv2, OSPFv3 and BGP Prefix-SID, when
+      Segment Routing with one of these four routing protocols is deployed, we
+      get insight into which traffic is being forwarded based on which MPLS
+      control plane protocol.</t>
+
+      <t>A typical use case scenario is to monitor MPLS control plane
+      migrations from LDP to IS-IS or OSPF Segment Routing. Such a migration
+      can be done node by node as described in <xref
+      target="RFC8661">RFC8661</xref></t>
+
+      <t>Another use case is the monitoring of a migration to a <xref
+      target="I-D.hegde-spring-mpls-seamless-sr">Seamless MPLS SR</xref>
+      architecture. Where prefixes are propagated with dynamic BGP labels
+      according to <xref target="RFC8277">RFC8277</xref>, BGP Prefix-SID
+      according to <xref target="RFC8669">RFC8669</xref> and used for the
+      forwarding between IGP domains. Adding an additional layer into the MPLS
+      data plane to above discribed use case.</t>
+
+      <t>Both use cases can be verified by looking at mplsTopLabelType(46),
+      mplsTopLabelIPv4Address(47), mplsTopLabelStackSection(70) and
+      forwardingStatus(89) dimensions. Giving insights into the MPLS data
+      plane for which MPLS provider edge loopback address, which label
+      protocol has been used and how many packets are forwarded or dropped and
+      when dropped why they have been dropped.</t>
+
+      <t>By looking at the MPLS label value itself, it is not always clear as
+      to which label protocol it belongs, since they could potentially share
+      the same label allocation range. This is the case for IGP-Adjacency
+      SID's, LDP and dynamic BGP labels as an example.</t>
+    </section>
+
+    <section anchor="IANA" title="IANA Considerations">
+      <t>This document specifies four additional code points for IS-IS,
+      OSPFv2, OSPFv3 and BGP Prefix-SID Segment Routing extension in the
+      existing sub-registry "IPFIX MPLS label type (Value 46)" of the "IPFIX
+      Information Elements" and one new "IPFIX Information Element" with a new
+      sub-registry in the "IP Flow Information Export (IPFIX) Entities" name
+      space.</t>
+
+      <t><figure>
+          <artwork align="center"><![CDATA[
+       -----------------------------------------------------
+       | Value|       Description              | Reference |
+       |---------------------------------------------------|
+       | TBD1 | OSPFv2 Segment Routing         |  RFC8665  |
+       |---------------------------------------------------|
+       | TBD2 | OSPFv3 Segment Routing         |  RFC8666  |
+       |---------------------------------------------------|
+       | TBD3 | IS-IS Segment Routing          |  RFC8667  |
+       |---------------------------------------------------|
+       | TBD4 | BGP Segment Routing Prefix-SID |  RFC8669  |
+       -----------------------------------------------------
+
+ Figure 1: Updates to "IPFIX MPLS label type (Value 46)" SubRegistry ]]></artwork>
+        </figure></t>
+    </section>
+
+    <section anchor="Security" title="Security Considerations">
+      <t>The same security considerations apply as for the IPFIX Protocol
+      <xref target="RFC7012">RFC7012</xref>.</t>
+    </section>
+
+    <section title="Acknowledgements">
+      <t>I would like to thank Paul Aitken, Loa Andersson, Tianran Zhou,
+      Pierre Francois, Bruno Decreane, Paolo Lucente, Hannes Gredler, Ketan
+      Talaulikar, Sabrina Tanamal, Erik Auerswald and Sergey Fomin for their
+      review and valuable comments.</t>
+    </section>
+  </middle>
+
+  <back>
+    <references title="Normative References">
+      <?rfc include='reference.RFC.7012'?>
+    </references>
+
+    <references title="Informative References">
+      <?rfc include='reference.I-D.ali-spring-sr-traffic-accounting'?>
+
+      <?rfc include='reference.I-D.hegde-spring-mpls-seamless-sr'?>
+
+      <?rfc include='reference.RFC.8277'?>
+
+      <?rfc include='reference.RFC.5036'?>
+
+      <?rfc include='reference.RFC.4364'?>
+
+      <?rfc include='reference.RFC.8661'?>
+
+      <?rfc include='reference.RFC.8665'?>
+
+      <?rfc include='reference.RFC.8666'?>
+
+      <?rfc include='reference.RFC.8667'?>
+
+      <?rfc include='reference.RFC.8669'?>
+
+      <?rfc include='reference.RFC.8660'?>
+
+      <reference anchor="IANA-IPFIX-IE46"
+                 target="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-mpls-label-type">
+        <front>
+          <title>IANA IP Flow Information Export (IPFIX) Information Element
+          #46 SubRegistry</title>
+
+          <author/>
+
+          <date/>
+        </front>
+      </reference>
+    </references>
+  </back>
+</rfc>
