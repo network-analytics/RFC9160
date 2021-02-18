@@ -4,8 +4,8 @@
 
 Network Working Group                                            T. Graf
 Internet-Draft                                                  Swisscom
-Intended status: Standards Track                        October 15, 2020
-Expires: April 18, 2021
+Intended status: Standards Track                       February 18, 2021
+Expires: August 22, 2021
 
 
         Export of MPLS Segment Routing Label Type Information in
@@ -35,11 +35,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on April 18, 2021.
+   This Internet-Draft will expire on August 22, 2021.
 
 Copyright Notice
 
-   Copyright (c) 2020 IETF Trust and the persons identified as the
+   Copyright (c) 2021 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Graf                     Expires April 18, 2021                 [Page 1]
+Graf                     Expires August 22, 2021                [Page 1]
 
-Internet-Draft   IPFIX MPLS Segment Routing Information     October 2020
+Internet-Draft   IPFIX MPLS Segment Routing Information    February 2021
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Graf                     Expires April 18, 2021                 [Page 2]
+Graf                     Expires August 22, 2021                [Page 2]
 
-Internet-Draft   IPFIX MPLS Segment Routing Information     October 2020
+Internet-Draft   IPFIX MPLS Segment Routing Information    February 2021
 
 
    [RFC8277], BGP Prefix-SID according to RFC8669 [RFC8669] and used for
@@ -139,19 +139,19 @@ Internet-Draft   IPFIX MPLS Segment Routing Information     October 2020
    with a new sub-registry in the "IP Flow Information Export (IPFIX)
    Entities" name space.
 
-          -----------------------------------------------------
-          | Value|       Description              | Reference |
-          |---------------------------------------------------|
-          | TBD1 | OSPFv2 Segment Routing         |  RFC8665  |
-          |---------------------------------------------------|
-          | TBD2 | OSPFv3 Segment Routing         |  RFC8666  |
-          |---------------------------------------------------|
-          | TBD3 | IS-IS Segment Routing          |  RFC8667  |
-          |---------------------------------------------------|
-          | TBD4 | BGP Segment Routing Prefix-SID |  RFC8669  |
-          -----------------------------------------------------
+       -----------------------------------------------------------------
+       | Value|       Description              | Reference | Requester |
+       |---------------------------------------------------|------------
+       | TBD2 | OSPFv2 Segment Routing         |  RFC8665  |   TBD1    |
+       |---------------------------------------------------|------------
+       | TBD3 | OSPFv3 Segment Routing         |  RFC8666  |   TBD1    |
+       |---------------------------------------------------|------------
+       | TBD4 | IS-IS Segment Routing          |  RFC8667  |   TBD1    |
+       |---------------------------------------------------|------------
+       | TBD5 | BGP Segment Routing Prefix-SID |  RFC8669  |   TBD1    |
+       -----------------------------------------------------------------
 
-    Figure 1: Updates to "IPFIX MPLS label type (Value 46)" SubRegistry
+ Figure 1: Updates to "IPFIX MPLS label type (Value 46)" SubRegistry
 
 4.  Security Considerations
 
@@ -165,9 +165,9 @@ Internet-Draft   IPFIX MPLS Segment Routing Information     October 2020
 
 
 
-Graf                     Expires April 18, 2021                 [Page 3]
+Graf                     Expires August 22, 2021                [Page 3]
 
-Internet-Draft   IPFIX MPLS Segment Routing Information     October 2020
+Internet-Draft   IPFIX MPLS Segment Routing Information    February 2021
 
 
 5.  Acknowledgements
@@ -197,9 +197,9 @@ Internet-Draft   IPFIX MPLS Segment Routing Information     October 2020
 
    [I-D.hegde-spring-mpls-seamless-sr]
               Hegde, S., Bowers, C., Xu, X., Gulko, A., Bogdanov, A.,
-              Uttaro, J., and L. Jalil, "Seamless Segment Routing",
-              draft-hegde-spring-mpls-seamless-sr-02 (work in progress),
-              September 2020.
+              Uttaro, J., Jalil, L., Khaddam, M., and A. Alston,
+              "Seamless Segment Routing", draft-hegde-spring-mpls-
+              seamless-sr-04 (work in progress), January 2021.
 
    [IANA-IPFIX-IE46]
               "IANA IP Flow Information Export (IPFIX) Information
@@ -221,9 +221,9 @@ Internet-Draft   IPFIX MPLS Segment Routing Information     October 2020
 
 
 
-Graf                     Expires April 18, 2021                 [Page 4]
+Graf                     Expires August 22, 2021                [Page 4]
 
-Internet-Draft   IPFIX MPLS Segment Routing Information     October 2020
+Internet-Draft   IPFIX MPLS Segment Routing Information    February 2021
 
 
    [RFC8660]  Bashandy, A., Ed., Filsfils, C., Ed., Previdi, S.,
@@ -277,4 +277,4 @@ Author's Address
 
 
 
-Graf                     Expires April 18, 2021                 [Page 5]
+Graf                     Expires August 22, 2021                [Page 5]
