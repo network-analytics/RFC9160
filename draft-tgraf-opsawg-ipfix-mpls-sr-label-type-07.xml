@@ -35,7 +35,7 @@
       </address>
     </author>
 
-    <date day="17" month="March" year="2021"/>
+    <date day="20" month="March" year="2021"/>
 
     <abstract>
       <t>This document introduces additional code points in the
@@ -92,9 +92,15 @@
 
       <t>Both use cases can be verified by using mplsTopLabelType(46),
       mplsTopLabelIPv4Address(47), mplsTopLabelStackSection(70) and
-      forwardingStatus(89) dimensions to get insights how many packets are
-      forwarded or dropped for which reason, MPLS provider edge loopback
-      address and label protocol.</t>
+      forwardingStatus(89) dimensions to get insights into</t>
+
+      <t><list style="symbols">
+          <t>how many packets are forwarded or dropped</t>
+
+          <t>if dropped, for which reasons</t>
+
+          <t>the MPLS provider edge loopback address and label protocol</t>
+        </list></t>
 
       <t>By looking at the MPLS label value itself, it is not always clear as
       to which label protocol it belongs, since they could potentially share
