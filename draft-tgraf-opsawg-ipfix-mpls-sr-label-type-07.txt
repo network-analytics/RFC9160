@@ -4,13 +4,13 @@
 
 Network Working Group                                            T. Graf
 Internet-Draft                                                  Swisscom
-Intended status: Standards Track                          March 20, 2021
-Expires: September 21, 2021
+Intended status: Standards Track                          March 24, 2021
+Expires: September 25, 2021
 
 
         Export of MPLS Segment Routing Label Type Information in
                    IP Flow Information Export (IPFIX)
-                draft-tgraf-ipfix-mpls-sr-label-type-06
+                draft-tgraf-ipfix-mpls-sr-label-type-07
 
 Abstract
 
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 21, 2021.
+   This Internet-Draft will expire on September 25, 2021.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Graf                   Expires September 21, 2021               [Page 1]
+Graf                   Expires September 25, 2021               [Page 1]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Graf                   Expires September 21, 2021               [Page 2]
+Graf                   Expires September 25, 2021               [Page 2]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
 
@@ -165,7 +165,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
 
 
 
-Graf                   Expires September 21, 2021               [Page 3]
+Graf                   Expires September 25, 2021               [Page 3]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
 
@@ -213,7 +213,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
               Hegde, S., Bowers, C., Xu, X., Gulko, A., Bogdanov, A.,
               Uttaro, J., Jalil, L., Khaddam, M., and A. Alston,
               "Seamless Segment Routing", draft-hegde-spring-mpls-
-              seamless-sr-05 (work in progress), January 2021.
+              seamless-sr-04 (work in progress), January 2021.
 
 
 
@@ -221,7 +221,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
 
 
 
-Graf                   Expires September 21, 2021               [Page 4]
+Graf                   Expires September 25, 2021               [Page 4]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
 
@@ -277,7 +277,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
 
 
 
-Graf                   Expires September 21, 2021               [Page 5]
+Graf                   Expires September 25, 2021               [Page 5]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information       March 2021
 
@@ -333,4 +333,4 @@ Author's Address
 
 
 
-Graf                   Expires September 21, 2021               [Page 6]
+Graf                   Expires September 25, 2021               [Page 6]

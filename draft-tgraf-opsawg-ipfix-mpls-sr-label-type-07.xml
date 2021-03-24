@@ -10,7 +10,7 @@
 <?rfc inline="yes"?>
 <?rfc compact="yes"?>
 <?rfc subcompact="no"?>
-<rfc category="std" docName="draft-tgraf-ipfix-mpls-sr-label-type-06"
+<rfc category="std" docName="draft-tgraf-ipfix-mpls-sr-label-type-07"
      ipr="trust200902">
   <front>
     <title
@@ -35,7 +35,7 @@
       </address>
     </author>
 
-    <date day="20" month="March" year="2021"/>
+    <date day="24" month="March" year="2021"/>
 
     <abstract>
       <t>This document introduces additional code points in the
