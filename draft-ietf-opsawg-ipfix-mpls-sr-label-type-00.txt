@@ -10,7 +10,7 @@ Expires: September 25, 2021
 
         Export of MPLS Segment Routing Label Type Information in
                    IP Flow Information Export (IPFIX)
-                 draft-ietf-ipfix-mpls-sr-label-type-00
+             draft-ietf-opsawg-ipfix-mpls-sr-label-type-00
 
 Abstract
 
