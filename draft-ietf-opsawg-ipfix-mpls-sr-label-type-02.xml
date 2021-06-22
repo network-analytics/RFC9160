@@ -35,7 +35,7 @@
       </address>
     </author>
 
-    <date day="15" month="June" year="2021"/>
+    <date day="22" month="June" year="2021"/>
 
     <abstract>
       <t>This document introduces new IP Flow Information Export (IPFIX) code
@@ -143,6 +143,8 @@
       <t>Note to RFC-editor:</t>
 
       <t><list style="symbols">
+          <t>Please replace TBD1 - TBD4 with the values allocated by IANA</t>
+
           <t>Please remove above two IANA notes.</t>
         </list></t>
     </section>

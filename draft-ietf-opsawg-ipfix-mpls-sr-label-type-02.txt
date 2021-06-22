@@ -4,8 +4,8 @@
 
 Network Working Group                                            T. Graf
 Internet-Draft                                                  Swisscom
-Intended status: Standards Track                           June 15, 2021
-Expires: December 17, 2021
+Intended status: Standards Track                           June 22, 2021
+Expires: December 24, 2021
 
 
         Export of MPLS Segment Routing Label Type Information in
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on December 17, 2021.
+   This Internet-Draft will expire on December 24, 2021.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Graf                    Expires December 17, 2021               [Page 1]
+Graf                    Expires December 24, 2021               [Page 1]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Graf                    Expires December 17, 2021               [Page 2]
+Graf                    Expires December 24, 2021               [Page 2]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
 
@@ -165,7 +165,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
 
 
 
-Graf                    Expires December 17, 2021               [Page 3]
+Graf                    Expires December 24, 2021               [Page 3]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
 
@@ -174,6 +174,8 @@ Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
       this document.
 
    Note to RFC-editor:
+
+   o  Please replace TBD1 - TBD4 with the values allocated by IANA
 
    o  Please remove above two IANA notes.
 
@@ -211,20 +213,25 @@ Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
 
 7.2.  Informative References
 
+
+
+
+
+
+
+
+
+Graf                    Expires December 24, 2021               [Page 4]
+
+Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
+
+
    [I-D.ali-spring-sr-traffic-accounting]
               Filsfils, C., Talaulikar, K., Sivabalan, S., Horneffer,
               M., Raszuk, R., Litkowski, S., Voyer, D., and R. Morton,
               "Traffic Accounting in Segment Routing Networks", draft-
               ali-spring-sr-traffic-accounting-05 (work in progress),
               April 2021.
-
-
-
-
-Graf                    Expires December 17, 2021               [Page 4]
-
-Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
-
 
    [I-D.hegde-spring-mpls-seamless-sr]
               Hegde, S., Bowers, C., Xu, X., Gulko, A., Bogdanov, A.,
@@ -264,23 +271,22 @@ Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
               for Segment Routing", RFC 8666, DOI 10.17487/RFC8666,
               December 2019, <https://www.rfc-editor.org/info/rfc8666>.
 
+
+
+
+
+
+
+Graf                    Expires December 24, 2021               [Page 5]
+
+Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
+
+
    [RFC8667]  Previdi, S., Ed., Ginsberg, L., Ed., Filsfils, C.,
               Bashandy, A., Gredler, H., and B. Decraene, "IS-IS
               Extensions for Segment Routing", RFC 8667,
               DOI 10.17487/RFC8667, December 2019,
               <https://www.rfc-editor.org/info/rfc8667>.
-
-
-
-
-
-
-
-
-Graf                    Expires December 17, 2021               [Page 5]
-
-Internet-Draft   IPFIX MPLS Segment Routing Information        June 2021
-
 
    [RFC8669]  Previdi, S., Filsfils, C., Lindem, A., Ed., Sreekantiah,
               A., and H. Gredler, "Segment Routing Prefix Segment
@@ -327,10 +333,4 @@ Author's Address
 
 
 
-
-
-
-
-
-
-Graf                    Expires December 17, 2021               [Page 6]
+Graf                    Expires December 24, 2021               [Page 6]
