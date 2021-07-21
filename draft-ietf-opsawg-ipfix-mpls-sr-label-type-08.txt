@@ -4,8 +4,8 @@
 
 Network Working Group                                            T. Graf
 Internet-Draft                                                  Swisscom
-Intended status: Informational                             July 20, 2021
-Expires: January 21, 2022
+Intended status: Informational                             July 25, 2021
+Expires: January 22, 2022
 
 
         Export of MPLS Segment Routing Label Type Information in
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on January 21, 2022.
+   This Internet-Draft will expire on January 22, 2022.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Graf                    Expires January 21, 2022                [Page 1]
+Graf                    Expires January 22, 2022                [Page 1]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Graf                    Expires January 21, 2022                [Page 2]
+Graf                    Expires January 22, 2022                [Page 2]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
 
@@ -140,17 +140,17 @@ Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
    [IANA-IPFIX].
 
 
-      +-------+--------------------------------+-------------+
-      | Value |       Description              |  Reference  |
-      +-------+--------------------------------+-------------+
-      | TBD1  | OSPFv2 Segment Routing         | [RFC-to-be] |
-      +-------+--------------------------------+-------------+
-      | TBD2  | OSPFv3 Segment Routing         | [RFC-to-be] |
-      +-------+--------------------------------+-------------+
-      | TBD3  | IS-IS Segment Routing          | [RFC-to-be] |
-      +-------+--------------------------------+-------------+
-      | TBD4  | BGP Segment Routing Prefix-SID | [RFC-to-be] |
-      +-------+--------------------------------+-------------+
+      +-------+--------------------------------+----------------------+
+      | Value |          Description           |      Reference       |
+      +-------+--------------------------------+----------------------+
+      | TBD1  | OSPFv2 Segment Routing         | [RFC-to-be], RFC8665 |
+      +-------+--------------------------------+----------------------+
+      | TBD2  | OSPFv3 Segment Routing         | [RFC-to-be], RFC8666 |
+      +-------+--------------------------------+----------------------+
+      | TBD3  | IS-IS Segment Routing          | [RFC-to-be], RFC8667 |
+      +-------+--------------------------------+----------------------+
+      | TBD4  | BGP Segment Routing Prefix-SID | [RFC-to-be], RFC8669 |
+      +-------+--------------------------------+----------------------+
 
       Table 1: Updates to "IPFIX MPLS label type (Value 46)" subregistry
 
@@ -165,7 +165,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
 
 
 
-Graf                    Expires January 21, 2022                [Page 3]
+Graf                    Expires January 22, 2022                [Page 3]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
 
@@ -221,7 +221,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
 
 
 
-Graf                    Expires January 21, 2022                [Page 4]
+Graf                    Expires January 22, 2022                [Page 4]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
 
@@ -277,7 +277,7 @@ Author's Address
 
 
 
-Graf                    Expires January 21, 2022                [Page 5]
+Graf                    Expires January 22, 2022                [Page 5]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
 
@@ -333,4 +333,4 @@ Internet-Draft   IPFIX MPLS Segment Routing Information        July 2021
 
 
 
-Graf                    Expires January 21, 2022                [Page 6]
+Graf                    Expires January 22, 2022                [Page 6]
