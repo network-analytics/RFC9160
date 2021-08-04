@@ -35,7 +35,7 @@
       </address>
     </author>
 
-    <date day="25" month="July" year="2021"/>
+    <date day="4" month="August" year="2021"/>
 
     <abstract>
       <t>This document introduces new IP Flow Information Export (IPFIX) code
@@ -99,9 +99,9 @@
         </list></t>
 
       <t>By looking at the MPLS label value itself, it is not always clear as
-      to which label protocol it belongs. This because they may share the same
-      label allocation range. This is, for example, the case for IGP-Adjacency
-      SIDs, LDP and dynamic BGP labels.</t>
+      to which label protocol it belongs. This is because they may share the
+      same label allocation range. This is, for example, the case for
+      IGP-Adjacency SIDs, LDP and dynamic BGP labels.</t>
     </section>
 
     <section anchor="IANA" title="IANA Considerations">
