@@ -195,7 +195,8 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
    Sabrina Tanamal, Erik Auerswald, Sergey Fomin, Mohamed Boucadair, Tom
    Petch, Qin Wu and Matthias Arnold for their review and valuable
    comments.  Many thanks also to Robert Wilton for the AD review.
-   Thanks to Alvaro Retana for the IESG review.
+   Thanks to Alvaro Retana, Eric Vyncke and Benjamin Kadukfor the IESG
+   review.
 
 7.  References
 
@@ -214,7 +215,6 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
               "Traffic Accounting in Segment Routing Networks", draft-
               ali-spring-sr-traffic-accounting-05 (work in progress),
               April 2021.
-
 
 
 
