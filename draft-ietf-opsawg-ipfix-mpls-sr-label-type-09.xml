@@ -35,7 +35,7 @@
       </address>
     </author>
 
-    <date day="05" month="September" year="2021"/>
+    <date day="09" month="September" year="2021"/>
 
     <abstract>
       <t>This document introduces new IP Flow Information Export (IPFIX) code
@@ -49,7 +49,7 @@
 
   <middle>
     <section anchor="Introduction" title="Introduction">
-      <t>Four new routing protocol extensions, <xref target="RFC8665">OSPFv2
+      <t>Four routing protocol extensions, <xref target="RFC8665">OSPFv2
       Extensions</xref>, <xref target="RFC8666">OSPFv3 Extensions</xref>,
       <xref target="RFC8667">IS-IS Extensions</xref>, <xref
       target="RFC8669">BGP Prefix Segment Identifiers (Prefix-SIDs)</xref> and
@@ -153,8 +153,8 @@
     </section>
 
     <section anchor="Security" title="Security Considerations">
-      <t>There exists no extra security considerations regarding the
-      allocation of these new IPFIX IEs compared to <xref
+      <t>There exists no significant extra security considerations regarding
+      the allocation of these new IPFIX IEs compared to <xref
       target="RFC7012"/>.</t>
     </section>
 
@@ -164,7 +164,8 @@
       Bruno Decreane, Paolo Lucente, Hannes Gredler, Ketan Talaulikar, Sabrina
       Tanamal, Erik Auerswald, Sergey Fomin, Mohamed Boucadair, Tom Petch, Qin
       Wu and Matthias Arnold for their review and valuable comments. Many
-      thanks also to Robert Wilton for the AD review. Thanks to Alvaro Retana for the IESG review.</t>
+      thanks also to Robert Wilton for the AD review. Thanks to Alvaro Retana
+      for the IESG review.</t>
     </section>
   </middle>
 
