@@ -4,8 +4,8 @@
 
 Network Working Group                                            T. Graf
 Internet-Draft                                                  Swisscom
-Intended status: Informational                        September 10, 2021
-Expires: March 14, 2022
+Intended status: Informational                        September 11, 2021
+Expires: March 15, 2022
 
 
         Export of MPLS Segment Routing Label Type Information in
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on March 14, 2022.
+   This Internet-Draft will expire on March 15, 2022.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Graf                     Expires March 14, 2022                 [Page 1]
+Graf                     Expires March 15, 2022                 [Page 1]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
@@ -82,8 +82,9 @@ Table of Contents
    plane [RFC8660].
 
    Also, [I-D.ali-spring-sr-traffic-accounting] describes how IP Flow
-   Information Export [RFC7012] can be leveraged to account traffic to
-   MPLS SR label dimensions within a Segment Routing domain.
+   Information Export [RFC7012] can be leveraged in dimensional data
+   modelling to account traffic to MPLS SR label dimensions within a
+   Segment Routing domain.
 
    In [RFC7012], the Information Element (IE) mplsTopLabelType(46)
    identifies which MPLS control plane protocol allocated the top-of-
@@ -104,18 +105,19 @@ Table of Contents
    LDP to IS-IS or OSPF Segment Routing.  Such a migration can be done
    node by node as described in Appendix A of [RFC8661].
 
-   Another use case is to monitor MPLS control plane migrations from
-   dynamic BGP labels [RFC8277] to BGP Prefix-SIDs in the context of
 
 
 
-Graf                     Expires March 14, 2022                 [Page 2]
+
+Graf                     Expires March 15, 2022                 [Page 2]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
 
-   Seamless MPLS SR described in Section 4.6 of
-   [I-D.hegde-spring-mpls-seamless-sr].
+   Another use case is to monitor MPLS control plane migrations from
+   dynamic BGP labels [RFC8277] to BGP Prefix-SIDs [RFC8669].  The
+   motivation and benefits for such a migration is described in
+   [RFC8670].
 
    Both use cases can be verified by using mplsTopLabelType(46),
    mplsTopLabelIPv4Address(47), mplsTopLabelIPv6Address(140),
@@ -163,9 +165,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
 
 
-
-
-Graf                     Expires March 14, 2022                 [Page 3]
+Graf                     Expires March 15, 2022                 [Page 3]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
@@ -221,7 +221,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
 
 
-Graf                     Expires March 14, 2022                 [Page 4]
+Graf                     Expires March 15, 2022                 [Page 4]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
@@ -232,13 +232,6 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
               "Traffic Accounting in Segment Routing Networks", draft-
               ali-spring-sr-traffic-accounting-05 (work in progress),
               April 2021.
-
-   [I-D.hegde-spring-mpls-seamless-sr]
-              Hegde, S., Bowers, C., Xu, X., Gulko, A., Bogdanov, A.,
-              Uttaro, J., Jalil, L., Khaddam, M., Alston, A., and L. M.
-              Contreras, "Seamless SR Problem Statement", draft-hegde-
-              spring-mpls-seamless-sr-05 (work in progress), February
-              2021.
 
    [IANA-IPFIX]
               "IANA, IPFIX MPLS label type (Value 46)",
@@ -272,16 +265,6 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
               DOI 10.17487/RFC8665, December 2019,
               <https://www.rfc-editor.org/info/rfc8665>.
 
-
-
-
-
-
-Graf                     Expires March 14, 2022                 [Page 5]
-
-Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
-
-
    [RFC8666]  Psenak, P., Ed. and S. Previdi, Ed., "OSPFv3 Extensions
               for Segment Routing", RFC 8666, DOI 10.17487/RFC8666,
               December 2019, <https://www.rfc-editor.org/info/rfc8666>.
@@ -292,11 +275,23 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
               DOI 10.17487/RFC8667, December 2019,
               <https://www.rfc-editor.org/info/rfc8667>.
 
+
+
+Graf                     Expires March 15, 2022                 [Page 5]
+
+Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
+
+
    [RFC8669]  Previdi, S., Filsfils, C., Lindem, A., Ed., Sreekantiah,
               A., and H. Gredler, "Segment Routing Prefix Segment
               Identifier Extensions for BGP", RFC 8669,
               DOI 10.17487/RFC8669, December 2019,
               <https://www.rfc-editor.org/info/rfc8669>.
+
+   [RFC8670]  Filsfils, C., Ed., Previdi, S., Dawra, G., Aries, E., and
+              P. Lapukhov, "BGP Prefix Segment in Large-Scale Data
+              Centers", RFC 8670, DOI 10.17487/RFC8670, December 2019,
+              <https://www.rfc-editor.org/info/rfc8670>.
 
 Author's Address
 
@@ -333,4 +328,9 @@ Author's Address
 
 
 
-Graf                     Expires March 14, 2022                 [Page 6]
+
+
+
+
+
+Graf                     Expires March 15, 2022                 [Page 6]

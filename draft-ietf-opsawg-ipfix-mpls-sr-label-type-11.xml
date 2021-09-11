@@ -35,7 +35,7 @@
       </address>
     </author>
 
-    <date day="10" month="September" year="2021"/>
+    <date day="11" month="September" year="2021"/>
 
     <abstract>
       <t>This document introduces new IP Flow Information Export (IPFIX) code
@@ -60,8 +60,8 @@
 
       <t>Also, <xref target="I-D.ali-spring-sr-traffic-accounting"/> describes
       how IP Flow Information Export <xref target="RFC7012"/> can be leveraged
-      to account traffic to MPLS SR label dimensions within a Segment Routing
-      domain.</t>
+      in dimensional data modelling to account traffic to MPLS SR label
+      dimensions within a Segment Routing domain.</t>
 
       <t>In <xref target="RFC7012"/>, the Information Element (IE)
       mplsTopLabelType(46) identifies which MPLS control plane protocol
@@ -83,9 +83,9 @@
       by node as described in Appendix A of <xref target="RFC8661"/>.</t>
 
       <t>Another use case is to monitor MPLS control plane migrations from
-      dynamic BGP labels <xref target="RFC8277"/> to BGP Prefix-SIDs in the
-      context of Seamless MPLS SR described in Section 4.6 of <xref
-      target="I-D.hegde-spring-mpls-seamless-sr"/>.</t>
+      dynamic BGP labels <xref target="RFC8277"/> to BGP Prefix-SIDs <xref
+      target="RFC8669"/>. The motivation and benefits for such a migration is
+      described in <xref target="RFC8670"/>.</t>
 
       <t>Both use cases can be verified by using mplsTopLabelType(46),
       mplsTopLabelIPv4Address(47), mplsTopLabelIPv6Address(140),
@@ -185,8 +185,6 @@
     <references title="Informative References">
       <?rfc include='reference.I-D.ali-spring-sr-traffic-accounting'?>
 
-      <?rfc include='reference.I-D.hegde-spring-mpls-seamless-sr'?>
-
       <?rfc include='reference.RFC.8277'?>
 
       <?rfc include='reference.RFC.8660'?>
@@ -202,6 +200,8 @@
       <?rfc include='reference.RFC.8667'?>
 
       <?rfc include='reference.RFC.8669'?>
+
+      <?rfc include='reference.RFC.8670'?>
 
       <reference anchor="IANA-IPFIX"
                  target="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-mpls-label-type">
