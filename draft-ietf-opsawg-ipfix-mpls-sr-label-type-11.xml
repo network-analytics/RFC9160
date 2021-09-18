@@ -35,7 +35,7 @@
       </address>
     </author>
 
-    <date day="11" month="September" year="2021"/>
+    <date day="18" month="September" year="2021"/>
 
     <abstract>
       <t>This document introduces new IP Flow Information Export (IPFIX) code
@@ -84,8 +84,9 @@
 
       <t>Another use case is to monitor MPLS control plane migrations from
       dynamic BGP labels <xref target="RFC8277"/> to BGP Prefix-SIDs <xref
-      target="RFC8669"/>. For example, the motivation and benefits for such a migration in massively scale data centers are
-      described in <xref target="RFC8670"/>.</t>
+      target="RFC8669"/>. For example, the motivation and benefits for such a
+      migration in large-scale data centers are described in <xref
+      target="RFC8670"/>.</t>
 
       <t>Both use cases can be verified by using mplsTopLabelType(46),
       mplsTopLabelIPv4Address(47), mplsTopLabelIPv6Address(140),

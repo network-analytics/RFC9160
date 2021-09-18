@@ -4,8 +4,8 @@
 
 Network Working Group                                            T. Graf
 Internet-Draft                                                  Swisscom
-Intended status: Informational                        September 11, 2021
-Expires: March 15, 2022
+Intended status: Informational                        September 18, 2021
+Expires: March 22, 2022
 
 
         Export of MPLS Segment Routing Label Type Information in
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on March 15, 2022.
+   This Internet-Draft will expire on March 22, 2022.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Graf                     Expires March 15, 2022                 [Page 1]
+Graf                     Expires March 22, 2022                 [Page 1]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
@@ -109,15 +109,15 @@ Table of Contents
 
 
 
-Graf                     Expires March 15, 2022                 [Page 2]
+Graf                     Expires March 22, 2022                 [Page 2]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
 
    Another use case is to monitor MPLS control plane migrations from
-   dynamic BGP labels [RFC8277] to BGP Prefix-SIDs [RFC8669].  The
-   motivation and benefits for such a migration is described in
-   [RFC8670].
+   dynamic BGP labels [RFC8277] to BGP Prefix-SIDs [RFC8669].  For
+   example, the motivation and benefits for such a migration in large-
+   scale data centers are described in [RFC8670].
 
    Both use cases can be verified by using mplsTopLabelType(46),
    mplsTopLabelIPv4Address(47), mplsTopLabelIPv6Address(140),
@@ -165,7 +165,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
 
 
-Graf                     Expires March 15, 2022                 [Page 3]
+Graf                     Expires March 22, 2022                 [Page 3]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
@@ -221,7 +221,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
 
 
-Graf                     Expires March 15, 2022                 [Page 4]
+Graf                     Expires March 22, 2022                 [Page 4]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
@@ -277,7 +277,7 @@ Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
 
 
-Graf                     Expires March 15, 2022                 [Page 5]
+Graf                     Expires March 22, 2022                 [Page 5]
 
 Internet-Draft   IPFIX MPLS Segment Routing Information   September 2021
 
@@ -333,4 +333,4 @@ Author's Address
 
 
 
-Graf                     Expires March 15, 2022                 [Page 6]
+Graf                     Expires March 22, 2022                 [Page 6]
